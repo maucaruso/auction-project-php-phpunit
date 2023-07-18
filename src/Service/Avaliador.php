@@ -24,8 +24,8 @@ class Avaliador
     }
     
     $lances = $leilao->getLances();
-    $ultimoLance = $lances[count($lances) - 1];
-    $this->maiorValor = $ultimoLance->getValor();
+    // $ultimoLance = $lances[count($lances) - 1];
+    // $this->maiorValor = $ultimoLance->getValor();
     
     $lances = $leilao->getLances();
     usort($lances, function(Lance $lance1, Lance $lance2) {
